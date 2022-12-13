@@ -1,16 +1,31 @@
 <!DOCTYPE html>
 <html lang="en-CA">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Credits</title>
-</head>
-<body>
-  <header></header>
-  <main>
-    <p>This is the credits page</p>
-  </main>
-  <footer></footer>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Credits</title>
+    <script src="js/main.js" type="module"></script>
+  </head>
+  <body id="credits">
+    <header></header>
+    <main>
+      <form id="userSearch">
+        <select name="mediaType" id="mediaType">
+          <option value="movie">Movie</option>
+          <option value="tv">T.V.</option>
+        </select>
+        <label class="visually-hidden" for="searchInput">Search Input</label>
+        <input
+          type="text"
+          name="searchInput"
+          id="searchInput"
+          placeholder="Search TMDB"
+        />
+        <button id="searchBtn" type="submit">Search</button>
+      </form>
+      <p>This is the credits page</p>
+    </main>
+    <footer></footer>
+  </body>
 </html>
